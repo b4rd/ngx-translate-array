@@ -1,0 +1,31 @@
+{
+  "name": "ngx-translate-array",
+  "version": "9.0.1",
+  "description": "ngx-translate extension to facilitate language cache.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/b4rd/ngx-translate-array"
+  },
+  "author": {
+    "name": "b4rd",
+    "email": "jakk87@gmail.com"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "ng2-translate",
+    "ngx-translate",
+    "translate",
+    "translateArray",
+    "translation",
+    "i18n"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/b4rd/ngx-translate-array/issues"
+  },
+  "peerDependencies": {
+    "@angular/core": "^9.1.0",
+    "@ngx-translate/core": ">8.0.0"
+  }
+}
