@@ -3,7 +3,7 @@
 [![NPM version][npm-version-image]][npm-url]
 [![MIT License][license-image]][license-url]
 
-A modification of ngx-translate's TranslatePipe that can provide multiple translations at one.
+A modification of ngx-translate's TranslatePipe that can provide multiple translations at once.
 
 ## Installation
 
@@ -14,6 +14,8 @@ $ npm install ngx-translate-array --save
 ```
 
 ## Usage
+
+### Import `TranslateArrayModule`.
 
 ```typescript
 @NgModule({
@@ -32,27 +34,26 @@ export class AppModule {
 }
 ```
 
-### Initializing
-
-To initialize *ngx-translate* you usually do
+### Use `translateArray` pipe in a template to translate an array of strings.
 
 ```typescript
-  import { Component } from '@angular/core';
-  import { TranslateService } from '@ngx-translate/core';
-
 @Component({
-  selector: 'app',
-  template: `
-            <div>{{ ['banana', 'orange'] | translateArray }}</div>
-        `
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  fruitKeys = ['APPLE', 'BANANA', 'ORANGE', 'PINEAPPLE'];
 
   constructor(translateService: TranslateService) {
-    translateService.setDefaultLang('en');
-    translateService.use('en');
+    translateService.setDefaultLang('es');
   }
 }
+```
+
+In app.component.html:
+```html
+{{ (fruitKeys | translateArray).join(' | ') }}
 ```
 
 ## License
