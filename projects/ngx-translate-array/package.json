@@ -1,7 +1,7 @@
 {
   "name": "ngx-translate-array",
-  "version": "9.0.2",
-  "description": "ngx-translate extension to facilitate language cache.",
+  "version": "9.0.3",
+  "description": "ngx-translate extension to translate multiple values at once",
   "repository": {
     "type": "git",
     "url": "https://github.com/b4rd/ngx-translate-array"
